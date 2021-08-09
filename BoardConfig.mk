@@ -40,10 +40,10 @@ TW_THEME := landscape_hdpi
 
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/recovery.fstab
 
-#TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/zImage
-TARGET_KERNEL_SOURCE := kernel/amazon/mantis
-TARGET_KERNEL_CONFIG := mantis_defconfig
-TARGET_KERNEL_VARIANT_CONFIG := mantis_defconfig
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/zImage
+#TARGET_KERNEL_SOURCE := kernel/amazon/mantis
+#TARGET_KERNEL_CONFIG := mantis_defconfig
+#TARGET_KERNEL_VARIANT_CONFIG := mantis_defconfig
 
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00000000 --ramdisk_offset 0x03400000 --second_offset 0x00ef8000 --tags_offset 0x0dff8000
 # original - not enough space for us!
